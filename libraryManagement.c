@@ -32,10 +32,10 @@ int main(){
         case 1:                                              //Add a book
                 for(int i = 0; i < 20; i++){
                     if (bk[i].id == 0){                      //to find empty space in bk array
-                        printf("Enter name of the book: ");
-                        scanf("%s", bk[i].name);
+                        printf("Enter name of the book: \n");
+                        fgets(bk[i].name, 30, stdin);
                         printf("Enter name of the author: ");
-                        scanf("%s", bk[i].author);
+                        fgets(bk[i].author, 20, stdin);
                         printf("Enter book ID: ");
                         scanf("%d", &bk[i].id);
                         bk[i].avbl = 'y';                    //set availability to y
